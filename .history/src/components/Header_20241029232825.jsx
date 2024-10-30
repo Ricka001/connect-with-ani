@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <>
-      <h1 className="flex flex-col items-center p-5">Connect with Ani</h1>
+      <h1 className="flex flex-col items-center ">Connect with Ani</h1>
       {/* Add image here */}
       {/* <img src="" alt="" /> */}
       <nav className="flex justify-center items-center space-x-80">

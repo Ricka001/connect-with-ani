@@ -40,7 +40,7 @@ export default async function IdPage({ params }) {
     redirect(`/posts/${params.id}`);
   }
   return (
-    <div>
+    <>
       <h1>Add a comment and get involved!</h1>
       <h2>{ani[0].anime_name}</h2>
       <p>{ani[0].rating}</p>
@@ -76,11 +76,11 @@ export default async function IdPage({ params }) {
           placeholder="Say what you want I have no filters BUDDY!"
           required
         />
-        <button type="submit" className="border-yellow-300 border-4">
+        <button type="submit" className="border-red-300 border-4">
           Submit
         </button>
       </form>
-    </div>
+    </>
     // here i need to display an individual post and relevant data
     // here i will display a form with inputs that are connected to the comments table columns in my db
     //

@@ -1,7 +1,7 @@
 // we ndd some navigation
 //we need to use params to render data dynamically
 //! remember the metadata
-
+import postStyle from "@/app/posts/posts.module.css";
 import { db } from "@/utils/dbConnection";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
@@ -40,7 +40,7 @@ export default async function IdPage({ params }) {
     redirect(`/posts/${params.id}`);
   }
   return (
-    <div>
+    <>
       <h1>Add a comment and get involved!</h1>
       <h2>{ani[0].anime_name}</h2>
       <p>{ani[0].rating}</p>
@@ -80,7 +80,7 @@ export default async function IdPage({ params }) {
           Submit
         </button>
       </form>
-    </div>
+    </>
     // here i need to display an individual post and relevant data
     // here i will display a form with inputs that are connected to the comments table columns in my db
     //

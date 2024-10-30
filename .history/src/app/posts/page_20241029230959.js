@@ -10,7 +10,7 @@ export default async function PostsPage() {
   const wrangledAni = ani.rows;
 
   return (
-    <div className={postStyle.body}>
+    <div>
       <h1>Posts Page</h1>
       {wrangledAni.map((anime) => (
         <div key={anime.id}>

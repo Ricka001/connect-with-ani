@@ -1,7 +1,7 @@
 // we ndd some navigation
 //we need to use params to render data dynamically
 //! remember the metadata
-
+import postStyle from "@/app/posts/posts.module.css";
 import { db } from "@/utils/dbConnection";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
